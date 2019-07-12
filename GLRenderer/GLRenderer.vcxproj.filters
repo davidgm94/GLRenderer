@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GLFW">
+      <UniqueIdentifier>{25cfa66c-d705-4754-bd17-85c4a8ada035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Glad">
+      <UniqueIdentifier>{35756c85-b15d-4ddd-a93c-37faaa839fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{a29eb3f7-1c0f-47dd-ab8f-e1fa05b3bf99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GLRenderer.cpp" />
+    <ClCompile Include="..\external\glfw\src\context.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\init.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\input.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\monitor.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\win32_init.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\win32_joystick.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\win32_monitor.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\win32_thread.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\win32_time.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\win32_window.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\window.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glad\src\glad.c">
+      <Filter>Glad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\egl_context.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\vulkan.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\wgl_context.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\glfw\src\osmesa_context.c">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\external\glfw\src\win32_joystick.h">
+      <Filter>GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\glfw\src\win32_platform.h">
+      <Filter>GLFW</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="triangle.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="triangle.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
