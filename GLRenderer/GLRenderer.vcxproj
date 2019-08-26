@@ -87,11 +87,13 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)external\glfw\include;$(SolutionDir)external\glad\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)external\assimp;$(SolutionDir)external\meshoptimizer;$(SolutionDir)external\glm;$(ProjectDir);$(SolutionDir)external\glfw\include;$(SolutionDir)external\glad\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>D:\git\GLRenderer\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc142-mtd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,10 +148,33 @@
   <ItemGroup>
     <ClInclude Include="..\external\glfw\src\win32_joystick.h" />
     <ClInclude Include="..\external\glfw\src\win32_platform.h" />
+    <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="triangle.frag.glsl" />
-    <None Include="triangle.vert.glsl" />
+    <None Include="ambient.frag.glsl" />
+    <None Include="asteroid.frag.glsl" />
+    <None Include="asteroid.vert.glsl" />
+    <None Include="depth.frag.glsl" />
+    <None Include="depth.vert.glsl" />
+    <None Include="instancing.frag.glsl" />
+    <None Include="instancing.vert.glsl" />
+    <None Include="instancingTextured.frag.glsl" />
+    <None Include="instancingTextured.vert.glsl" />
+    <None Include="nanosuit.frag.glsl" />
+    <None Include="nanosuit.vert.glsl" />
+    <None Include="phong_all_lights.frag.glsl" />
+    <None Include="phong_directional.frag.glsl" />
+    <None Include="phong.vert.glsl" />
+    <None Include="lamp.frag.glsl" />
+    <None Include="lamp.vert.glsl" />
+    <None Include="lighting.frag.glsl" />
+    <None Include="lighting.vert.glsl" />
+    <None Include="phong_point.frag.glsl" />
+    <None Include="phong_spotlight.frag.glsl" />
+    <None Include="planet.frag.glsl" />
+    <None Include="planet.vert.glsl" />
+    <None Include="shader.frag.glsl" />
+    <None Include="shader.vert.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

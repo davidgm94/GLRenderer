@@ -69,12 +69,79 @@
     <ClInclude Include="..\external\glfw\src\win32_platform.h">
       <Filter>GLFW</Filter>
     </ClInclude>
+    <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="triangle.vert.glsl">
+    <None Include="shader.vert.glsl">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="triangle.frag.glsl">
+    <None Include="shader.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="lighting.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="lighting.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="lamp.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="ambient.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="lamp.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="phong.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="phong_directional.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="phong_point.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="phong_spotlight.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="phong_all_lights.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="nanosuit.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="nanosuit.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="depth.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="depth.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="instancing.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="instancing.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="instancingTextured.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="instancingTextured.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="planet.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="planet.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="asteroid.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="asteroid.frag.glsl">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>
